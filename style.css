@@ -1,3 +1,16 @@
+/* 
+O & é um recurso utilizado em pré-processadores CSS como Sass ou Less, 
+e ele refere-se ao seletor pai. No seu código, o & é usado para referenciar 
+o seletor pai (.precos). Portanto, quando você vê & > #parcelas, isso
+significa que está selecionando um elemento com a ID "parcelas" que é um 
+filho direto de um elemento com a classe "precos".
+
+A utilização do & ajuda a evitar repetição de código e a tornar os seletores 
+mais específicos, melhorando a legibilidade e a organização do código. 
+É uma característica bastante útil em situações onde você tem estilos aninhados 
+e quer referenciar o seletor pai de forma direta.
+*/
+
 @font-face {
   font-family: 'San Francisco';
   font-weight: 400;
