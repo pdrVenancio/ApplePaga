@@ -38,15 +38,15 @@ let tamanhoSelecionado = 1
 let imagemSelecionada = 1
 
 function atualizarCorSelecionada() {
-  // pega a opção selecionada com querySelector buscando a opção checked
+  // Pega a opção selecionada com querySelector buscando a opção checked
   // .id pega o id do elemento
-  //.charAt(0) - pego a posição [0] da string (id dado no html) ja que cada id começa com o numero referente a imagem(0, 1)
+  // .charAt(0) - pego a posição [0] da string (id dado no html) ja que cada id começa com o numero referente a imagem(0, 1)
   const numeroCorSelecionada = document.querySelector('[name="opcao-cor"]:checked').id.charAt(0)
 
   corSelecionada = numeroCorSelecionada
   // Carrega o nome da cor no titulo
   nomeCorSelecionada.innerText = `Cor - ${opcoesCores[corSelecionada].nome}`
-  // troca a aimagem principal
+  // Troca a imagem principal
   imagemVisualizacao.src = `./imagens/opcoes-cores/${opcoesCores[corSelecionada].nomePastaImagens}/imagem-${imagemSelecionada}.jpeg`
   // Troca a imagem das miniaturas
   opcaoImagem0.src = `./imagens/opcoes-cores/${opcoesCores[corSelecionada].nomePastaImagens}/imagem-0.jpeg`
@@ -59,7 +59,7 @@ function atualizarCorSelecionada() {
 function atualizarTamanho() {
   // pega a opção selecionada com querySelector buscando a opção checked
   // .id pega o id do elemento
-  //.charAt(0) - pego a posição [0] da string (id dado no html) ja que cada id começa com o numero referente a imagem(0, 1)
+  // .charAt(0) - pego a posição [0] da string (id dado no html) ja que cada id começa com o numero referente a imagem(0, 1)
   const opcaoTamanhoSelecionado = document.querySelector('[name="opcao-tamanho"]:checked').id.charAt(0)
 
   tamanhoSelecionado = opcaoTamanhoSelecionado
@@ -79,9 +79,9 @@ function atualizarTamanho() {
 function atualizarImagemSelecionada() {
   // Outro jeito de fazer seria passar o numero da img como parametro para a função que iria funcionar normalmente
 
-  // pega a opção selecionada com querySelector buscando a opção checked
-  // .id pega o id do elemento
-  //.charAt(0) - pego a posição [0] da string (id dado no html) ja que cada id começa com o numero referente a imagem(0, 1, 2)
+  //  pega a opção selecionada com querySelector buscando a opção checked
+  //  .id pega o id do elemento
+  //  .charAt(0) - pego a posição [0] da string (id dado no html) ja que cada id começa com o numero referente a imagem(0, 1, 2)
   const opcaoImagemSelecionada = document.querySelector('[name="opcao-imagem"]:checked').id.charAt(0)
   
   imagemSelecionada = opcaoImagemSelecionada
